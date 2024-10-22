@@ -10,10 +10,12 @@ import Order from './pages/Order/Order';
 import  Cart from './pages/cart/Cart'
 import Dashboard from './pages/admin/Dashboard';
 import Nopage from './pages/nopage/Nopage';
+import MyState from './context/data/myState';
 
 export default function App() {
   return (
-    <Router>
+    <MyState>
+      <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/order" element={<Order />} />
@@ -22,5 +24,7 @@ export default function App() {
         <Route path="/*" element={<Nopage />} />
       </Routes>
     </Router>
+    </MyState>
+    
   );
 }

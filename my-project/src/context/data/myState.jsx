@@ -1,14 +1,24 @@
+import { useState } from 'react'
 import MyContext from './myContext'
 
-function myState(props) {
-    cost state  = {
-        name: 
+function MyState(props) {
+  const [mode, setMode] = useState('light')
+   const toogleMode  = () => {
+    if(mode ==='light') {
+      setMode('dark');
+      document.body.style.backgroundColor = "rgb(17, 24, 39)"
     }
+    else {
+      setMode('light');
+      document.body.style.backgroundColor = "White"
+    }
+   }
+   
   return (
-    <MyContext.Provider>{
+    <MyContext.Provider value={{toogleMode}}>
         {props.children}
-    }</MyContext.Provider>
+    </MyContext.Provider>
   )
 }
-
-export default myState
+ 
+export default MyState
