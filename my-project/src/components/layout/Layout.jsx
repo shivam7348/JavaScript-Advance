@@ -1,7 +1,7 @@
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
 
-function Layout({ children }) {  // Use lowercase "children"
+function Layout({ children }) {  
   return (
     <div>
       <Navbar />
