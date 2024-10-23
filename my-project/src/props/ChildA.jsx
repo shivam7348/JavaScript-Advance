@@ -1,9 +1,9 @@
 import React from 'react'
 import ChildB from './ChildB'
 
-function ChildA({name}) {
+function ChildA() {
   return (
-    <ChildB name={name}/>
+    <ChildB/>
   )
 }
 

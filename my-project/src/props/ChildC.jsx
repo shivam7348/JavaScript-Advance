@@ -1,9 +1,18 @@
 import React from 'react'
+import { data } from '../App'
 
-function ChildC({name}) {
+function ChildC() {
   return (
     <div>
-        <h1>Componets C displaying {name}</h1>
+        <data.Consumer>
+          {
+            (name) => {
+              return (
+                <h1> My name is {name} </h1>
+              )
+            }
+          }
+        </data.Consumer>
     </div>
   )
 }

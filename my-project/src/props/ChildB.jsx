@@ -1,9 +1,20 @@
 import React from 'react'
 import ChildC from './ChildC'
+import { data } from '../App'
 
-function ChildB({name}) {
+function ChildB() {
   return (
-   <ChildC name={name}/>
+   <>
+   <data.Consumer>
+    {
+      (name) => {
+        return (
+          <h1> Hello My name Satyam & {name}</h1>
+        )
+      }
+    }
+   </data.Consumer>
+   </>
   )
 }
 
