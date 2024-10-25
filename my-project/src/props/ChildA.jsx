@@ -3,7 +3,7 @@ import ChildB from './ChildB'
 
 function ChildA() {
   return (
-    <ChildB/>
+    
   )
 }
 
