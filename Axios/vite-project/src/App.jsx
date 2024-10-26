@@ -1,7 +1,10 @@
+import AxiosTutorial from "./AxiosTutorial"
 
 function App() {
   return (
-    <div>App</div>
+    <div>
+      <AxiosTutorial/>
+    </div>
   )
 }
 
